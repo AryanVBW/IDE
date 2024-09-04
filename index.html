@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple IDE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="editor-area">
+      <div class="tab-bar">
+        <button class="tab active" data-tab="html">HTML</button>
+        <button class="tab" data-tab="css">CSS</button>
+        <button class="tab" data-tab="js">JavaScript</button>
+        <button class="tab" data-tab="python">Python</button>
+      </div>
+
+      <textarea id="html-editor" class="editor"></textarea>
+      <textarea id="css-editor" class="editor hidden"></textarea>
+      <textarea id="js-editor" class="editor hidden"></textarea>
+      <textarea id="python-editor" class="editor hidden"></textarea>
+    </div>
+
+    <div class="output-area">
+      <iframe id="output-iframe"></iframe>
+    </div>
+
+    <button id="run-button">Run</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
