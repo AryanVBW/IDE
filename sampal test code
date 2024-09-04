@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome to NST,pune IDE</h1>
+
+    <p id="demo">This is a paragraph.</p>
+
+    <button onclick="changeText()">Click Me!</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+-----------------------------------------------------_CSS--------------------------------------
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+#demo {
+    font-size: 18px;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+----------------------------------------------CSS-end-------------------------------------------------
+
+function changeText() {
+    document.getElementById("demo").innerHTML = "The text has been changed!";
+}
+
+
+------------------------------------------js-END--------------------------------------------------------
